@@ -1,0 +1,249 @@
+
+// --------------------------------------------------------------------------------------
+//
+//  body
+//
+
+body {
+  margin: 0;  
+  background-color: @bodyBackground;
+  #fontSets > .base;
+  letter-spacing: 0.02em;
+}
+
+// --------------------------------------------------------------------------------------
+//
+//  links
+//
+
+a {
+  color: @linkColor;
+  text-decoration: none;
+  cursor: default;
+}
+
+a:hover {
+  color: @linkColorHover;
+}
+
+button, input, textarea, select, option {
+    letter-spacing: 0.02em;
+}
+
+// --------------------------------------------------------------------------------------
+//
+//  headings
+//
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: lowercase;
+}
+
+h1 {
+	#fontSets > .pageHeader;	
+}
+
+h2 {
+	#fontSets > .pageSubheader;
+}
+
+h3 {
+	#fontSets > .pageSubheaderSecondary;
+}
+
+h4 {
+  #fontSets > .itemTitle;
+}
+
+h5 {
+  #fontSets > .itemTitleSecondary;
+}
+
+
+// --------------------------------------------------------------------------------------
+//
+//  code
+//
+
+code, pre, samp {
+    font-family: "Consolas";
+}
+
+// --------------------------------------------------------------------------------------
+//
+//  inputs
+//
+
+input[type=text], input[type=password], input[type=email], input[type=number],
+input[type=tel], input[type=url], input[type=search], textarea, .win-textarea {
+    -ms-user-select: element;
+    min-height: 28px;
+    min-width: 64px;
+    margin: 4px 0;
+    border-width: 2px;
+    border-style: solid;
+    background-clip: padding-box;
+    font-size: 11pt;
+    font-weight: 400;
+    line-height: 1.3636; /* 20px when font-size is 11pt */
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number],
+input[type=tel], input[type=url], input[type=search] {
+    width: 276px;
+    padding: 0;
+}
+
+input[type=file] {
+    border: none;
+    min-width: 100px;
+    min-height: 20px;
+    width: 340px;
+    height: 32px;
+    padding: 0;
+    margin: 7px 8px 21px 8px;
+    background-clip: padding-box;
+}
+
+textarea {
+    overflow-y: scroll;
+    word-wrap: break-word;
+    padding: 4px 8px;
+    /* Leave space for autohiding scrollbar on elements that enable text selection. */
+    padding-right: 17px;
+}
+
+textarea {
+    min-width: 260px;
+    min-height: 39px;
+}
+
+// --------------------------------------------------------------------------------------
+//
+//  buttons
+//
+
+button, input[type=button], input[type=reset], input[type=submit] {
+    min-height: 32px; /* content (20px) + padding + border */
+    min-width: 90px;
+    padding: 4px 8px;
+    border-width: 2px;
+    border-style: solid;
+    background-clip: padding-box;
+    font-size: 11pt;
+    font-weight: 600;
+    line-height: 1.3636;
+    margin: 0 0 3px;
+    cursor: default;
+}
+
+// --------------------------------------------------------------------------------------
+//
+//  img
+//
+
+img {
+    border-style: none;
+}
+
+// --------------------------------------------------------------------------------------
+//
+//  select
+//
+
+select {
+    min-height: 20px;
+    min-width: 80px;
+    border-width: 2px;
+    border-style: solid;
+    background-clip: padding-box;
+    margin: 4px 0;
+    font-size: 11pt;
+    font-weight: 400;
+    line-height: 1.3636; /* 20px when font-size is 11pt */
+}
+
+// --------------------------------------------------------------------------------------
+//
+//  radio
+//
+
+input[type=radio] {
+    width: 23px;
+    height: 23px;
+    margin-left: -1px;
+    margin-right: 4px;
+    margin-bottom: -2px;
+}
+
+// --------------------------------------------------------------------------------------
+//
+//  checkbox
+//
+
+input[type=checkbox] {
+    width: 21px;
+    height: 21px;
+    margin-right: 5px;
+}
+
+// --------------------------------------------------------------------------------------
+//
+//  forms
+//
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: inherit;
+}
+
+
+button, input[type=button], input[type=submit], input[type=reset] {
+    background-color: rgba(182, 182, 182, 0.7);
+    border-color: rgba(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0);
+}
+
+button[type=submit], input[type=submit]{
+    background-clip: border-box;
+    background-color: rgb(70, 23, 180);
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+button:hover, input[type=button]:hover, input[type=reset]:hover {
+    background-color: rgba(205, 205, 205, 0.82);
+    border-color: rgba(164, 164, 164, 0.45);
+}
+
+button[type=submit]:hover, input[type=submit]:hover {
+    background-clip: border-box;
+    background-color: rgb(95, 55, 190);
+    border-color: transparent;
+}
+
+button:hover:active, button[type=submit]:hover:active,
+input[type=button]:hover:active, input[type=reset]:hover:active,
+input[type=submit]:hover:active {
+    background-clip: border-box;
+    background-color: rgb(0, 0, 0);
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+button:disabled, button[type=submit]:disabled,
+input[type=button]:disabled, input[type=reset]:disabled,
+input[type=submit]:disabled, 
+button:disabled:active, button[type=submit]:disabled:active,
+input[type=button]:disabled:active, input[type=reset]:disabled:active,
+input[type=submit]:disabled:active {
+    background-color: rgba(202, 202, 202, 0.4);
+    border-color: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,90 @@
+
+// --------------------------------------------------------------------------------------
+//
+//  Typography
+//
+#fontSets {
+  
+  .base {
+    font-family: @regularFontFamily;
+    font-size: @regularFontSize;
+    font-weight: @regularFontWeight;
+    line-height: @regularLineHeight;
+    color: @textRestColor;
+    line-height: 18px; 
+  }
+
+  .pageHeader {
+    font-size: @xlargeFontSize; 
+    font-weight: @lightFontWeight;
+    line-height: 1.1429;   
+  }
+
+  .pageSubheader {
+    font-size: @largeFontSize;    
+    font-weight: @lightFontWeight;
+    line-height: 1.2;
+  }
+
+  .pageSubheaderSecondary  {
+    font-size: @largeFontSize;
+    font-weight: @lightFontWeight;
+    color: @textRestColorSecondary;
+  }
+
+  .itemTitle {
+    font-size: @regularFontSize;
+    font-weight: @semiboldFontWeight;
+  }
+
+  .itemTitleSecondary {
+    color: @textRestColorSecondary;
+  }
+}
+
+
+// --------------------------------------------------------------------------------------
+//
+//  Grid
+//
+#grid {
+  .unit {
+    .size(@gridUnitHeight, @gridUnitWidth);
+  }
+
+  .subunit {
+    .size(gridSubunitHeight, @gridSubunitWidth);
+  }
+}
+
+
+// --------------------------------------------------------------------------------------
+//
+//  Utilities
+//
+
+//  Clearfix - reference: h5bp.com/q
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+// Sizing
+.size(@height, @width) {
+  width: @width;
+  height: @height;
+}
+
+.square(@size) {
+  .size(@size, @size);
+}
+
+
